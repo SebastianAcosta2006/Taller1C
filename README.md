@@ -51,11 +51,11 @@ int main() {
     
       do {
         printf("\nSeleccione una opción:\n");
-        printf("1. Factorial recursivo\n");
-        printf("2. Factorial iterativo\n");
-        printf("3. Saber si un número es primo\n");
-        printf("4. Mostrar números primos en un intervalo\n");
-        printf("5. Algoritmo de Euclides mcd \n");
+        printf("1. factorial recursivo\n");
+        printf("2. factorial iterativo\n");
+        printf("3. saber si un número es primo\n");
+        printf("4. mostrar números primos en un intervalo\n");
+        printf("5. algoritmo de Euclides mcd \n");
         scanf("%d", &opcion);
         
          if (opcion == 1) {
@@ -79,17 +79,12 @@ int main() {
             }
         } else if (opcion == 4) {
             int x, y;
-            printf("ingrese el valor de x (inicio del intervalo):");
+            printf("ingrese el valor de x:");
             scanf("%d", &x);
-            printf("ingrese el valor de y (fin del intervalo):");
+            printf("ingrese el valor de y:");
             scanf("%d", &y);
             printf("los números primos en el intervalo [%d, %d] son:\n", x, y);
             primos_en_rango(x, y);
-        } else if (opcion == 5) {
-            int a, b;
-            printf("ingrese dos números para calcular el mcd con e algoritmo de euclides:");
-            scanf("%d %d", &a, &b);
-            printf("el mcd de %d y %d es: %d\n", a, b, euclides(a, b));
         }
 
     } while (opcion != 0);
